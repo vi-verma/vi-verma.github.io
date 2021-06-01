@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./style.css"/>
+
+</head>
+
+<body onload="myFunction()">
+    <div id="main">
+        <div class="user-list">
+            <div class="menu-bar">
+                <img style="display: inline-block;" class="dp" src="img/images.jpeg" />
+                <div class="menu">
+                    <img class="msg msg1" src="img/message.png" onclick="userSorting()"/>
+                    <img class="msg" src="img/menu.webp" />
+                </div>
+            </div>
+            <div id="search-tab" >
+                <input onkeyup="filterUser(this)" class="search" type="text" placeholder="Search or start new chat" />
+                <img id="search-img" src="img/search.jpg" />
+            </div>
+            <div id="friends"></div>
+        </div>
+        <div class="chat-box">
+            <div id="chatWith" class="menu-bar2">
+                <div id="cUser" style="display: inline-block"></div>
+                <div id="head">
+                    <img class="head" src="img/search.jpg"/>
+                    <img class="head" src="img/menu.webp"/>
+                </div>  
+
+                <!-- 
+                <div id="headi">
+                    <img  class="fdp" src="img/images.jpeg" />
+                </div>
+                
+                <div style="display: inline-block;line-height: 5px;">
+                    <p class="name-tag">Name Tag </p>
+                    <p class="tag-info">jjj</p>
+                </div> 
+        
+                <div id="head">
+                    <img class="head" src="img/search.jpg"/>  
+                    <img class="head" src="img/menu.webp"/>
+                </div>   -->
+
+            </div>
+            <div id="chat-screen"></div>
+            <div class="type-box">
+                <div class="qq"> <img class="emoji emoji-shape" src="img/emoji.png" /> </div>
+                <div class="qq"><img class="emoji" src="img/att.png" /></div>
+                <div class="qq">
+                    <input id="inputCht" class="search2" type="text" placeholder="start new chat" onkeyup="handleKeyUp(event)" />
+                    <img id ="clickHere" onclick ="chatBoxChat(this)" src="./img/sendImg.png" /></div>
+                <div class="qq"><img class="emoji  mic" src="img/Microphone_1.png" /></div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
